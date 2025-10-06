@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <title>Responsive Navigation Example</title>
+        <style>
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+            body{background-color:aqua;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+            main{
+                padding: 1em;
+            }
+            #toggle-nav-btn{
+                display: none;
+                position: absolute;
+                right: 1em;
+                top: 1em;
+            }
+            #primary-nav li{
+                list-style: none;
+                display: inline-block;
+            }
+            @media screen and (max-width: 520px){
+                body{
+                    background-color:palegreen;
+                }
+            
+            @media (max-width: 520px){
+               #primary-nav{
+                display: grid;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 0.5s ease-out;
+               }
+               #primary-nav li{
+                display: block;
+               }
+               body.nav-open #primary-nav{
+                grid-template-rows: 1fr;
+               }
+               .inner{
+                overflow: hidden;
+               }
+               #toggle-nav-btn{
+                display: block; /*display button beneath breakpoint*/
+               }
+            }
+            
+            #primary-nav li {
+            list-style: none;
+            display: inline-block;
+            }
+        body.nav-open #primary-nav{
+            grid-template-rows: 1fr;
+        }
+        .inner{
+            overflow: hidden;
+        }
+        #toggle-nav-btn{
+            display: block;
+        }
+        }
+                
+        </style>
+    </head>
+    <body>
+        <h1>Big Bob's Ball Bearings, Bananas, Roller Skates, and Floor Wax, Inc.</h1>
+        <div class="container">
+        <p>Home to all your slippery object needs!  One trip, and disaster will strike!</p>
+        </div>
+    </body>
+    <script>
+        //Perform this after the window has loaded
+        window.onlad= () => {
+            //First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+            const toggleNavBtn = doctument.getElementByID ("toggle-nav-btn");
+            toggleNavBtn.innerHTML = "&#9776;";
+
+            //Tell button to do something on click
+            toggleNavBtn.addEventListener("click", () =>{
+                //toggle the body's class attribue
+                document.body.classList.toggle("nav-open");
+                toggleNavBtn.innerHTML = document.body.classList.contains("nav-open")
+                  ? "&#x2715"
+                  : "&#9776;";
+            });
+        };
+    </script>
+    <button id="toggle-nav-btn">
+    </button>
+    <nav id="primary-nav">
+        <div class="inner">
+            <ul>
+                <li><a class="active" href="size-adjust.html" class="active">Home</a></li>
+                <li><a class="active" href="size-adjust.html" class="active">About</a></li>
+                <li><a class="active" href="size-adjust.html" class="active">Services</a></li>
+                <li><a class="active" href="size-adjust.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img src="big_bob_disaster_store.png" alt="Big_Bob">
+</html>
