@@ -13,9 +13,9 @@
 
         #primary-nav ul{
             font-family: Arial, Helvetica, sans-serif;
-            text-align: left;
-            margin-left: 270px;
+            text-align: center;
             font-size: 20px;
+            display: inline-block;
         }
         header#site-header{
             margin: auto;
@@ -30,8 +30,8 @@
         }
                  #box1 {
                 margin: auto;
-                width: 905px;
-                height: 110px;
+                width: 980px;
+                height: auto;
                 top: 235;
                 left: 600;
                 margin-bottom: 50px;
@@ -71,11 +71,20 @@
         <header id="site-header">
             <div class="container">
                 <div class="centered">Making Cheesesteaks</div>
-                <img src="ketchup-bar.png" alt="Ketchup Bar">
+                <img src="ketchup-bar.png" alt="Ketchup Bar">  
+                <nav id="primary-nav">
+            <ul>
+                <a class="active" href="cheesesteak-instructions.html" class="active">Ingredients</a>
+                <a class="active" href="step-1-meat.html" class="active">Step 1: Meat</a>
+                <a class="active" href="step-2-mushrooms.html" class="active">Step 2: Mushrooms</a>
+                <a class="active" href="step-3-peppers.html" class="active">Step 3: Peppers</a>
+                <a class="active" href="step-4-rolls-cheese.html" class="active">Step 4: Rolls & Cheese</a>
+            </ul>
+        </nav>
             </div>
         </header>
         
-        <div id="box1"><p>STEP 3: PEPPERS</p></div>
+        <div id="box1"><h1>STEP 3: PEPPERS</h1></div>
         <div id="box2"><p>Directions:</p>
                        <p>Remove the top stems from two green bell peppers.  Rinse out the peppers with water, removing as many seeds as possible.</p>
                        <p> After washing and rinsing the peppers, slice them into strips, removing any remaining seeds and pith in the process.</p>
@@ -83,17 +92,9 @@
                        <p>Return peppers to plate after you finish cooking.</p>
         </div>
         <div id="box3">
-        <img src="green-peppers.png" alt="Peppers" width="421px" height="auto" border-radius="44%">
+        <img src="green-peppers-2.png" alt="Peppers" width="421px" height="auto" border-radius="44%">
         </div>
-        <nav id="primary-nav">
-            <ul>
-                <li><a class="active" href="cheesesteak-instructions.html" class="active">Ingredients</a></li>
-                <li><a class="active" href="step-1-meat.html" class="active">Step 1: Meat</a></li>
-                <li><a class="active" href="step-2-mushrooms.html" class="active">Step 2: Mushrooms</a></li>
-                <li><a class="active" href="step-3-peppers.html" class="active">Step 3: Peppers</a></li>
-                <li><a class="active" href="step-4-rolls-cheese.html" class="active">Step 4: Rolls & Cheese</a></li>
-            </ul>
-        </nav>
+      
          <div class="step-nav">
             <a href="step-2-mushrooms.html">←</a>
             <a href="step-4-rolls-cheese.html">→</a>
