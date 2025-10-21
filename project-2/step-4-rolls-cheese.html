@@ -11,7 +11,7 @@
             text-align: center; color: black; font-size: 30px;
             margin: 30px;}
 
-            #primary-nav ul{
+            #primary-nav ol li{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             font-size: 20px;
@@ -21,11 +21,19 @@
             margin: auto;
             background-color: #a25f03;
             width: 980px;
-            height: 185px;
+            height: auto;
             margin-bottom: 50px;
             border-radius: 44px;
             text-align: center; color: white; font-size: 64px; font-family: Brush Script MT, cursive;
             filter: drop-shadow(0 5px 12px black);
+            display: inline-block;
+
+            #ketchup-bar{
+                height: 20px;
+                width: 80%;
+                background-color: red;
+                margin: 10px auto;
+            }
 
         }
                  #box1 {
@@ -51,6 +59,7 @@
                     background-color: #FFDB66;
                     border-radius: 44px;
                     text-align: left; color: black; font-size: 30px; font-family:Arial, Helvetica, sans-serif;
+                    padding: 20px;
                     filter: drop-shadow(0 5px 12px black);
                 }
                 #box3{
@@ -70,22 +79,22 @@
     <body>
         <header id="site-header">
             <div class="container">
-                <div class="centered">Making Cheesesteaks</div>
-                <img src="ketchup-bar.png" alt="Ketchup Bar">
+                 <div class="centered"><a id="logo" href="index.html" style="color: white;">Making Cheesesteaks</a></div>
+                <div id="ketchup-bar"></div>
                 <nav id="primary-nav">
-            <ul>
-                <a class="active" href="cheesesteak-instructions.html" class="active">Ingredients</a>
-                <a class="active" href="step-1-meat.html" class="active">Step 1: Meat</a>
-                <a class="active" href="step-2-mushrooms.html" class="active">Step 2: Mushrooms</a>
-                <a class="active" href="step-3-peppers.html" class="active">Step 3: Peppers</a>
-                <a class="active" href="step-4-rolls-cheese.html" class="active">Step 4: Rolls & Cheese</a>
-            </ul>
+            <ol>
+                <li><a class="active" href="index.html" class="active" style="color:white;">Ingredients</a></li>
+                <li><a class="active" href="step-1-meat.html" class="active" style="color:white;">Step 1: Meat</a></li>
+                <li><a class="active" href="step-2-mushrooms.html" class="active" style="color:white;">Step 2: Mushrooms</a></li>
+                <li><a class="active" href="step-3-peppers.html" class="active" style="color:white;">Step 3: Peppers</a></li>
+                <li><a class="active" href="step-4-rolls-cheese.html" class="active" style="color:white;">Step 4: Rolls & Cheese</a></li>
+            </ol>
         </nav>
             </div>
         </header>
         
-        <div id="box1"><h1>STEP 4: ROLLS & CHEESE</h1></div>
-        <div id="box2"><p>Directions:</p>
+        <div id="box1"><h1 style="font-size: 44px;">STEP 4: ROLLS & CHEESE</h1></div>
+        <div id="box2"><p><strong>Directions:</strong></p>
                        <p>Slice open the rolls (if not already open).  Add in two slices of Provolone cheese.  If desired, place roll with cheese into the toaster oven and toast until the cheese just starts to melt.</p>
                        <p>After the meat, mushrooms, and peppers are cooked, open the roll and place them inside in any order you see fit after adding the cheese.  Add ketchup if desired.</p>
         </div>

@@ -8,7 +8,7 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center; color: black; font-size: 20px;
+            text-align: center; color: black; font-size: 30px;
             margin: 30px;}
 
         #primary-nav ol li{
@@ -17,23 +17,28 @@
             font-size: 20px;
             display: inline-block;
         }
+
         header#site-header{
             margin: auto;
             background-color: #a25f03;
             width: 980px;
             height: auto;
+            top: 235;
+            left: 600;
             margin-bottom: 50px;
             border-radius: 44px;
-            text-align: center; color: white; font-size: 64px; font-family: Brush Script MT, cursive;
+            text-align: center; color: white; font-size: 64px; font-family: "Brush Script MT", cursive;
             filter: drop-shadow(0 5px 12px black);
             display: inline-block;
 
-            #ketchup-bar{
+                #ketchup-bar{
                 height: 20px;
                 width: 80%;
                 background-color: red;
                 margin: 10px auto;
             }
+
+
 
         }
                  #box1 {
@@ -51,21 +56,21 @@
                 #box2{
                     display: inline-block;
                     width: 421px;
-                    height: auto;
+                    height: 644px;
                     top:395;
                     left: 600;
                     margin-bottom: 20px;
                     margin-right: 20px;
                     background-color: #FFDB66;
                     border-radius: 44px;
-                    text-align: left; color: black; font-size: 24px; font-family:Arial, Helvetica, sans-serif;
+                    text-align: center; color: black; font-size: 30px; font-family:Arial, Helvetica, sans-serif;
                     padding: 20px;
                     filter: drop-shadow(0 5px 12px black);
                 }
                 #box3{
                     display: inline-block;
                     width: 421px;
-                    height: auto;
+                    height: 644px;
                     top: 395;
                     left: 1300;
                     margin-bottom: 20px;
@@ -79,34 +84,47 @@
     <body>
         <header id="site-header">
             <div class="container">
-                 <div class="centered"><a id="logo" href="index.html" style="color: white;">Making Cheesesteaks</a></div>
+                <div class="centered"><a id="logo" href="index.html" style="color: white;">Making Cheesesteaks</a></div>
                 <div id="ketchup-bar"></div>
-                <nav id="primary-nav">
-            <ol>
-                <li><a class="active" href="index.html" class="active" style="color:white;">Ingredients</a></li>
-                <li><a class="active" href="step-1-meat.html" class="active" style="color:white;">Step 1: Meat</a></li>
-                <li><a class="active" href="step-2-mushrooms.html" class="active" style="color:white;">Step 2: Mushrooms</a></li>
-                <li><a class="active" href="step-3-peppers.html" class="active" style="color:white;">Step 3: Peppers</a></li>
-                <li><a class="active" href="step-4-rolls-cheese.html" class="active" style="color:white;">Step 4: Rolls & Cheese</a></li>
+             <nav id="primary-nav">
+              <ol>
+                <li>
+                    <a class="active" href="index.html" class="active" style="color:white;">Ingredients</a>
+                </li>
+                <li>
+                    <a class="active" href="step-1-meat.html" class="active" style="color:white;">Step 1: Meat</a>
+                </li>
+                <li>
+                    <a class="active" href="step-2-mushrooms.html" class="active" style="color:white;">Step 2: Mushrooms</a>
+                </li>
+                <li>
+                    <a class="active" href="step-3-peppers.html" class="active" style="color:white;">Step 3: Peppers</a>
+                </li>
+                <li>
+                    <a class="active" href="step-4-rolls-cheese.html" class="active" style="color:white;">Step 4: Rolls & Cheese</a>
+                </li>
             </ol>
-        </nav>
-            </div>
+            </nav>
+          </div>   
         </header>
         
-        <div id="box1"><h1 style="font-size: 44px;">STEP 3: PEPPERS</h1></div>
-        <div id="box2"><p><strong>Directions:</strong></p>
-                       <p>Remove the top stems from two green bell peppers.  Rinse out the peppers with water, removing as many seeds as possible.</p>
-                       <p> After washing and rinsing the peppers, slice them into strips, removing any remaining seeds and pith in the process.</p>
-                       <p>After moving the pepper slices to a plate, melt another 1/2 tablespoon of butter in the same pan used to cook the mushrooms.  After butter has melted, add pepper slices to the pan, and sauté until the peppers start to turn soft and small black marks start to appear.</p>
-                       <p>Return peppers to plate after you finish cooking.</p>
+        <div id="box1"><h1 style="font-size: 44px;">INGREDIENTS</h1></div>
+        <div id="box2"><p>28 oz. shaved steak</p>
+            <p>1 lb. sliced Baby Bella mushrooms</p>
+            <p>2 green bell peppers</p>
+            <p>4 oz. diced onions</p>
+            <p>Sliced Provolone cheese</p>
+            <p>Sliced Italian rolls</p>
+            <p>1 Tbsp. butter</p>
+            <p>Ketchup</p>
+            <p>Salt and black pepper</p>
         </div>
         <div id="box3">
-        <img src="green-peppers-2.png" alt="Peppers" width="421px" height="auto" border-radius="44%">
+        <img src="cheesesteak-quarter-size.png" alt="Cheesesteak" width="421px" height="644px" border-radius="44%">
         </div>
-      
-         <div class="step-nav">
-            <a href="step-2-mushrooms.html">←</a>
-            <a href="step-4-rolls-cheese.html">→</a>
+        
+        <div class="step-nav">
+            <a href="step-1-meat.html">→</a>
         </div>
     </body>
 </html>
